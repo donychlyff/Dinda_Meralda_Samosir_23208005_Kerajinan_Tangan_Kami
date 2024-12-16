@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinda_Meralda_Samosir_23208005_Kerajinan_Tangan_Kami</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #d6baba;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(37, 154, 217, 0.8);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: rgb(18, 10, 10);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .product-card {
+            background: rgb(239, 198, 162);
+            border: 1px solid #340505;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .product-card p {
+            font-size: 0.9em;
+            color: #1a0c0c;
+        }
+        .detail-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .detail-button:hover {
+            background-color: #45a049;
+        }
+        .product-detail {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgb(192, 198, 205);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .black-text {
+            color: black; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kerajinan Tangan Kami</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="../img/Keranjang Anyaman'.jpg" alt="Keranjang Anyaman">
+                <h3>Keranjang Anyaman</h3>
+                <p class="black-text">Harga: Rp 170,000</p>
+                <a href="#" class="detail-button" onclick="tampilkanDetail('detail1')">Lihat Detail</a>
+                <div id="detail1" class="product-detail">
+                    <h3>Detail Produk</h3>
+                    <p class="black-text"><strong>Bahan:</strong> Bahan alami dari rotan</p>
+                    <p class="black-text"><strong>Proses Pembuatan:</strong></p>
+                    <ul class="black-text">
+                        <li>Siapkan bahan rotan yang telah direndam.</li>
+                        <li>Anyam rotan sesuai pola yang diinginkan.</li>
+                        <li>Finishing dengan menghaluskan permukaan dan menambahkan lapisan pelindung.</li>
+                    </ul>
+                    <p><strong>Stok:</strong> 70 pcs</p>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src= "../img/gelang kayu.jpg" alt="Gelang kayu">
+        <h3> Gelang Kayu </h3>
+        <p>Harga: Rp 200,000</p>
+        <a href="#" class="detail-button" onclick="tampilkanDetail('detail2')">Lihat Detail</a>
+        <div id="detail2" class="product-detail">
+            <h3>Detail Produk</h3>
+            <p><strong>Bahan:</strong> kayu dan amplas.</p>
+            <p><strong>Proses Pembuatan:</strong>
+                <!--Langkah - Langkah -->  
+                <li>Buat bekas untuk membengkokkan kayu,<li>
+               <li>Potong kayu sesuai desain yang diinginkan.</li>
+                <li>Bersihkan tepi kayu dengan amplas</li> 
+                <li>Kepang benang untuk membuat gelang</li>
+                <li>Ukur panjang gelang, lalu ikat ujungnya</li>
+                <li>Buat tali pengatur panjang pendeknya.</li>
+            <p><strong>Stok:</strong> 120  pcs </p>
+        </div>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product-card">
+        <img src="../img/Vas keramik.jpeg" alt="Vas keramik">
+        <h3> Vas keramik </h3>
+        <p>Harga: Rp 400,000</p>
+        <a href="#" class="detail-button" onclick="tampilkanDetail('detail3')">Lihat Detail</a>
+        <div id="detail3" class="product-detail">
+            <h3>Detail Produk</h3>
+            <p><strong>Bahan:</strong> 
+               <li>Tanah liat, pasir halus, semen, glazur, air, cat tembikar, dan pigmen tanah liat</li> </p>
+            <p><strong>Proses Pembuatan:</strong> 
+                <!--Langkah - Langkah -->
+               <li>Pengolahan bahan, yaitu mencampur tanah liat dengan bahan-bahan lain.</li>
+            <li>Pembentukan, yaitu membentuk tanah liat menjadi bentuk vas dengan teknik handbuilding, throwing, atau castingli</li></p>
+            <li>Pengeringan, yaitu mengurangi kadar air dalam tanah liat agar teksturnya mengeras</li>
+            <li>Pembakaran, yaitu mengubah keadaan rapuh menjadi kuat dan keras</li>
+            <li>Dekorasi, yaitu menghias keramik dengan lukisan, cetakan, atau ukiran</li>
+            <li>Pemurnian, yaitu memoles keramik untuk menghilangkan ketidaksempurnaan dan memberikan kilauan</li>
+            <p><strong>Stok:</strong> 156 pcs</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function tampilkanDetail(id) {
+        const detailElement = document.getElementById(id);
+        if (detailElement.style.display === "block") {
+            detailElement.style.display = "none";
+        } else {
+            detailElement.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>
